@@ -103,27 +103,10 @@ with open(file_to_save, "w") as txt_file:
         f"-------------------------\n"
         f"Winner: {winning_candidate}\n"
         f"Winning Vote Count: {winning_count:,}\n"
-        f"Winning Pergentage: {winning_percentage:.1f}\n"
+        f"Winning Pergentage: {winning_percentage:.1f}%\n"
         f"-------------------------\n")
     #Print out the winning candedidate, vote count and percentage to terminal
     print(winning_candidate_summary)
 
     #Save the wining candidate's results to the txt file.
     txt_file.write(winning_candidate_summary)
-
-# close the file.
-#election_data.close()
-
-#file_to_save = os.path.join("Analysis","election_analysis.txt")
-#open(file_to_save, "w")
-
-
-
-# Using the with statement open the file as a text file.
-#with open(file_to_save,"w") as txt_file:    
-    # Write some data to the file.
-    # txt_file.write("Counties in the Election\n----------------------------\nArapahoe\nDenver\nJefferson")
-
-
-    
-
